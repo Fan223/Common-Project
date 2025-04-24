@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- 继承父 POM 配置 -->
+    <parent>
+        <groupId>fan</groupId>
+        <artifactId>fancy-dependencies</artifactId>
+        <version>2.1.0</version>
+        <!-- 指定父 POM 文件位置 -->
+        <relativePath/>
+    </parent>
+    <artifactId>fancy-toolkit</artifactId>
+    <version>2.1.0</version>
+
+    <name>fancy-toolkit</name>
+    <description>Basic toolkit.</description>
+    <url>https://github.com/Fan223/fancy-toolkit</url>
+    <inceptionYear>2022</inceptionYear>
+    <licenses>
+        <license/>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>Fan</id>
+            <name>Fancy</name>
+            <email>fanj.zh@foxmail.com</email>
+            <url>https://fan223.cn</url>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:https://github.com/Fan223/fancy-toolkit.git</connection>
+        <developerConnection>scm:git:git@github.com:Fan223/fancy-toolkit.git</developerConnection>
+        <url>https://github.com/Fan223/fancy-toolkit</url>
+        <tag/>
+    </scm>
+
+    <build>
+        <plugins>
+            <!-- Apache Maven Source Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <!-- 插件执行配置 -->
+                <executions>
+                    <execution>
+                        <id>attach-source</id>
+                        <!-- 插件执行目标 -->
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

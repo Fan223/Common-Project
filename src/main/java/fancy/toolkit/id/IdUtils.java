@@ -30,6 +30,17 @@ public class IdUtils {
     }
 
     /**
+     * 获取雪花 ID 字符串.
+     *
+     * @return {@link String}
+     * @author Fan
+     * @since 2025/4/24 16:53
+     */
+    public static String getSnowflakeIdStr() {
+        return String.valueOf(getSnowflakeId());
+    }
+
+    /**
      * 获取数据中心 ID.
      *
      * @param maxDataCenterId 最大数据中心 ID

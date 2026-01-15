@@ -29,6 +29,15 @@ public class IdUtils {
     }
 
     /**
+     * 生成雪花 ID 字符串.
+     *
+     * @return {@link String}
+     */
+    public static String generateSnowflakeIdStr() {
+        return String.valueOf(generateSnowflakeId());
+    }
+
+    /**
      * 生成 {@link UUID} 字符串.
      *
      * @return {@link String}

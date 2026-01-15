@@ -21,6 +21,15 @@ class IdUtilsTest {
     }
 
     @Test
+    void generateSnowflakeIdStr_singleCall_returnsValidString() {
+        String id = IdUtils.generateSnowflakeIdStr();
+
+        Assertions.assertNotNull(id);
+        Assertions.assertInstanceOf(String.class, id);
+        Assertions.assertTrue(id.matches("\\d+"));
+    }
+
+    @Test
     void generateUuid_multipleCalls_returnsDifferentUuids() {
         String uuid1 = IdUtils.generateUuid();
         String uuid2 = IdUtils.generateUuid();

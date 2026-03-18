@@ -5,7 +5,7 @@
     <parent>
         <groupId>fan</groupId>
         <artifactId>fancy-parent</artifactId>
-        <version>4.0.1</version>
+        <version>4.0.3</version>
     </parent>
     <artifactId>fancy-toolkit</artifactId>
     <version>2.0.0</version>
@@ -40,8 +40,8 @@
         </dependency>
 
         <dependency>
-            <groupId>tools.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
             <scope>provided</scope>
         </dependency>
 

@@ -23,7 +23,7 @@ public final class MapBuilder<K, V> implements Builder<Map<K, V>> {
     /**
      * 构造方法, 使用 {@link HashMap} 初始化内部的 {@link Map} 实例.
      */
-    public MapBuilder() {
+    private MapBuilder() {
         this.map = new HashMap<>();
     }
 
@@ -32,7 +32,7 @@ public final class MapBuilder<K, V> implements Builder<Map<K, V>> {
      *
      * @param map {@link Map}
      */
-    public MapBuilder(Map<K, V> map) {
+    private MapBuilder(Map<K, V> map) {
         this.map = map;
     }
 
